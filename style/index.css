@@ -1,0 +1,91 @@
+
+#outputBtn
+{
+    background-image: url(../images/export.png);
+    width: 65px;
+    height: 20px;
+}
+
+#pBtn
+{
+    background-image: url(../images/go.png);
+    width: 20px;
+    height: 21px;
+    border:0;
+}
+
+
+
+#add
+{
+    text-align:center;
+}
+
+#page
+{
+    font-family: DFKai-sb;
+}
+
+#page input
+{
+    border:0;
+    background-color: transparent;
+    text-decoration:underline;
+}
+
+#dataTable
+{
+    border:5px solid #BBB;
+    border-collapse: collapse;
+}
+
+#dataTable td
+{
+    border:1px solid #BBB;
+    font-size: 14px;
+    font-family: DFKai-sb;
+}
+
+#dataTable th
+{
+    border:1px solid #BBB;
+    font-size: 16px;
+    font-family: DFKai-sb;
+}
+
+#col:hover
+{
+    background-color: #EEEEEE;
+}
+
+#insert
+{
+    background-color: #66FF99;
+}
+
+#update
+{
+    background-color: #FF9900;
+}
+
+#delete
+{
+    background-color: #FF0000;
+}
+
+select
+{
+    font-size: 13px;
+    font-family: DFKai-sb;
+    color: #003399;
+}
+
+text
+{
+    font-weight: bold;
+    font-size: 13px;
+    font-family: DFKai-sb;
+    color: #003399;
+}
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit Page</title>
+        <script src="js/matchs.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+        <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <script src="js/datePicker.js" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css" href="style/styles.css">
+    </head>
+
+    <body>
+        <form action="<? echo $postUrl ?>" method="POST" style="text-align:center;">
+            <table border="1" align="center">
+                <tr>
+                    <td>ISBN</td>
+                    <td><input type="text" name="Isbn" maxLength="13" disabled="disabled" required="required"  value="<?php echo $isbn; ?>" /></td>
+                </tr>
+                <tr>
+                    <td>出版社</td>
+                    <td><input type="text" name="comp" maxLength="20" required="required" value="<?php echo $comp; ?>" /></td>
+                </tr>
+                <tr>
+                    <td>書名</td>
+                    <td><input type="text" name="book" maxLength="20" required="required" value="<?php echo $book; ?>" /></td>
+                </tr>
+                <tr>
+                    <td>作者</td>
+                    <td><input type="text" name="aut" maxLength="20" required="required" value="<?php echo $aut; ?>" /></td>
+                </tr>
+                <tr>
+                    <td>定價</td>
+                    <td><input type="text" name="price" maxLength="20" required="required" value="<?php echo $price; ?>" /></td>
+                </tr>
+                <tr>
+                    <td>發行日</td>
+                    <td><input type="text" maxlength="10" name="date" id="datepicker" required="required" value="<?php echo $date; ?>" /></td>
+                </tr>
+            </table>
+            <input type="hidden" name="id" value="<?php echo $_GET['id'] ?>" />
+            <input type="submit" value="Edit" />
+        </form>
+        <p style="text-align:center;">
+        <input type ="button" onclick="javascript:location.href='<?php echo $homeUrl; ?>'" value="Home"></input>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Page</title> 
+        <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+        <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <script src="js/datePicker.js" charset="utf-8"></script>
+        <script src="js/matchs.js" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+    </head>
+
+    <body>
+        <form action="<?php echo $addUrl; ?>" method="POST" style="text-align:center;">
+            <table border="1" align="center">
+                <tr>
+                    <td>ISBN</td>
+                    <td><input type="text" name="Isbn" maxLength="13" required="required"  /></td>
+                </tr>
+                <tr>
+                    <td>出版社</td>
+                    <td><input type="text" name="comp" maxLength="20" required="required" /></td>
+                </tr>
+                <tr>
+                    <td>書名</td>
+                    <td><input type="text" name="book" maxLength="20" required="required" /></td>
+                </tr>
+                <tr>
+                    <td>作者</td>
+                    <td><input type="text" name="aut" maxLength="20" required="required" /></td>
+                </tr>
+                <tr>
+                    <td>定價</td>
+                    <td><input type="text" name="price" maxLength="20" required="required" /></td>
+                </tr>
+                <tr>
+                    <td>發行日</td>
+                    <td><input type="text" name="date" maxlength="10" id="datepicker" required="required" /></td>
+                </tr>
+            </table>
+
+            <input type="submit" value="Add" />
+        </form>
+        <p style="text-align:center;">
+        <input type ="button" onclick="javascript:location.href='<?php echo $homeUrl; ?>'" value="Home"></input>
+        </p>
+    </body>
+
+</html>
